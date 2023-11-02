@@ -102,9 +102,10 @@ export default App;
 
 
 
-function ProductCard(prop,inCart,setInCart)
+// eslint-disable-next-line react/prop-types
+function ProductCard({productImg,productName,price,inCart,setInCart})
 {
-  const [show,setShow]=useState(true)
+  const [show,setShow]=useState(true);
 
   const handleAdd=()=>{
     setShow(!show)
@@ -116,10 +117,10 @@ function ProductCard(prop,inCart,setInCart)
   }
   return(
     <div className="cart-component">
-      <img src={prop.productImg} alt="no data" />
-      <h2>{prop.productName}</h2>
-      <h6>{prop.price}</h6>
-      {show===true ?
+      <img src={productImg} alt="no data" />
+      <h2>{productName}</h2>
+      <h6>{price}</h6>
+      {show === true ?
       <button onClick={handleAdd}>Add to Cart</button> :
       <button onClick={handleRemove}>Remove from Cart</button>
 }
