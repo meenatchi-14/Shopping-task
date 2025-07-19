@@ -1,28 +1,33 @@
 import './App.css';
  import { useState } from 'react';
+ import FancyProduct from "./image/Fancy Product.png";
+ import SpecialItem from "./image/SpecialOrder.webp";
+ import PopularItem from "./image/Popular Item.jpeg";
+ import SaleItem from "./image/Sale Item.jpeg";
+
 function App(){
   const data=[
     {
     productImage:
-    "https://i.ytimg.com/vi/sASG3iy5JwA/maxresdefault.jpg",
+    FancyProduct,
     productName:"Fancy Product",
     price:"$40.00 - $80.00",
   },
   {
     productImage:
-    "https://www.shutterstock.com/image-photo/text-sign-showing-special-order-260nw-1969445062.jpg",
+   SpecialItem,
     productName:"Special Item",
     price:"$18.00",
   },
   {
     productImage:
-    "https://www.foodlocale.in/wp-content/uploads/2022/11/food-1024x683.jpg",
+    PopularItem,
     productName:"Popular Item",
     price:"$40.00",
   },
   {
     productImage:
-    "https://www.businessinsider.in/photo/94359342/best-deals-on-kitchen-appliances-in-amazon-sale.jpg?imgsize=70714",
+    SaleItem,
     productName:"Sale Item",
     price:"$25.00",
   },
